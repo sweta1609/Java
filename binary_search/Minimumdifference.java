@@ -1,3 +1,29 @@
+
+// 1.If key is present in array → difference is 0, so directly return that index (or element).
+//  ✔ Correct.
+
+
+// 2.The farther a number is from key, the bigger the difference.
+//  ✔ Exactly. That’s why we want the element with the minimum absolute difference.
+
+
+// 3.We need to find neighbors of the key (the element just smaller and just larger than key).
+//  ✔ Correct. After binary search finishes, the search will stop around these neighbors.
+
+
+// end will be at the floor (largest element ≤ key).
+
+
+// start will be at the ceil (smallest element ≥ key).
+
+
+// 4.Once we get start and end indices, compare
+
+//  |ar[start] - key|  vs  |ar[end] - key|
+
+
+
+
 import java.util.*;
 
 public class Minimumdifference {
